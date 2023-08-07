@@ -5,8 +5,8 @@ Summary:        A small and simple sound and music player that is well integrate
 License:        GPL-3.0-or-later
 URL:            https://gitlab.gnome.org/World/amberol/
 Source0:        https://gitlab.gnome.org/World/amberol/-/archive/%{version}/amberol-%{version}.tar.bz2
-Source1:        vendor.tar.xz
-Source2:        cargo_config
+#Source1:        vendor.tar.xz
+#Source2:        cargo_config
 
 BuildRequires:  meson
 BuildRequires:  rust-packaging
@@ -32,11 +32,11 @@ Amberol plays music, and nothing else.
 
 %prep
 %autosetup -n %{name}-%{version} -a1 -p1
-mkdir .cargo
-cp %{SOURCE2} .cargo/config
+#mkdir .cargo
+#cp %{SOURCE2} .cargo/config
 
 %build
-%meson -DRUST_BACKTRACE=1
+%meson
 %meson_build
 
 %install
