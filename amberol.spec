@@ -9,6 +9,7 @@ Source1:        vendor.tar.xz
 #Source2:        cargo_config
 
 BuildRequires:  meson
+BuildRequires:  dbus-x11
 BuildRequires:  rust-packaging
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(glib-2.0)
