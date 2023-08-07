@@ -36,7 +36,7 @@ mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
 %build
-%meson
+%meson -DRUST_BACKTRACE=1
 %meson_build
 
 %install
