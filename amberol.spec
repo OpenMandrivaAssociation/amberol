@@ -5,7 +5,7 @@ Summary:        A small and simple sound and music player that is well integrate
 License:        GPL-3.0-or-later
 URL:            https://gitlab.gnome.org/World/amberol/
 Source0:        https://gitlab.gnome.org/World/amberol/-/archive/%{version}/amberol-%{version}.tar.bz2
-#Source1:        vendor.tar.xz
+Source1:        vendor.tar.xz
 #Source2:        cargo_config
 
 BuildRequires:  meson
