@@ -1,10 +1,13 @@
+%define git 20230724
+
 Name:           amberol
 Version:        0.10.3
-Release:        1
+Release:        0.%{git}.0
 Summary:        A small and simple sound and music player that is well integrated with GNOME.
 License:        GPL-3.0-or-later
 URL:            https://gitlab.gnome.org/World/amberol/
-Source0:        https://gitlab.gnome.org/World/amberol/-/archive/%{version}/amberol-%{version}.tar.bz2
+#Source0:        https://gitlab.gnome.org/World/amberol/-/archive/%{version}/amberol-%{version}.tar.bz2
+Source0:        https://gitlab.gnome.org/World/amberol/-/archive/main/amberol-main.tar.bz2
 Source1:        vendor.tar.xz
 #Source2:        cargo_config
 
@@ -33,7 +36,7 @@ not show you lyrics for your songs, or the Wikipedia page for your bands.
 Amberol plays music, and nothing else.
 
 %prep
-%autosetup -n %{name}-%{version} -a1 -p1
+%autosetup -n %{name}-main -p1
 #mkdir .cargo
 #cp %{SOURCE2} .cargo/config
 
