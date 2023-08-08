@@ -6,7 +6,7 @@ License:        GPL-3.0-or-later
 URL:            https://gitlab.gnome.org/World/amberol/
 Source0:        https://gitlab.gnome.org/World/amberol/-/archive/%{version}/amberol-%{version}.tar.bz2
 Source1:        vendor.tar.xz
-#Source2:        cargo_config
+Source2:        cargo_config
 
 BuildRequires:  meson
 BuildRequires:  dbus-x11
@@ -34,15 +34,14 @@ Amberol plays music, and nothing else.
 
 %prep
 %autosetup -n %{name}-%{version} -a1 -p1
-#mkdir .cargo
-#cp %{SOURCE2} .cargo/config
+mkdir .cargo
+cp %{SOURCE2} .cargo/config
 
 %build
-%meson
-%meson_build
+cargo build --release
 
 %install
-%meson_install
+cargo install 
 %find_lang %{name}
 
 %files -f %{name}.lang
