@@ -1,3 +1,5 @@
+%define _empty_manifest_terminate_build 0
+
 Name:           amberol
 Version:        0.10.3
 Release:        1
