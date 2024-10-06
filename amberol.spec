@@ -12,6 +12,7 @@ Source1:        vendor.tar.xz
 
 BuildRequires:  meson
 BuildRequires:  dbus-x11
+BuildRequires:  gettext
 BuildRequires:  rust-packaging
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(glib-2.0)
