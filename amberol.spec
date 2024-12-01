@@ -51,7 +51,7 @@ Amberol plays music, and nothing else.
 %files -f %{name}.lang
 %{_bindir}/amberol
 %{_datadir}/amberol/amberol.gresource
-%{_datadir}/appdata/io.bassi.Amberol.appdata.xml
+#{_datadir}/appdata/io.bassi.Amberol.appdata.xml
 %{_datadir}/applications/io.bassi.Amberol.desktop
 %{_datadir}/dbus-1/services/io.bassi.Amberol.service
 %{_datadir}/glib-2.0/schemas/io.bassi.Amberol.gschema.xml
