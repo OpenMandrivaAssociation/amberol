@@ -1,7 +1,7 @@
 %define _empty_manifest_terminate_build 0
 
 Name:           amberol
-Version:        2024.2
+Version:        2025.1
 Release:        1
 Summary:        A small and simple sound and music player that is well integrated with GNOME.
 License:        GPL-3.0-or-later
