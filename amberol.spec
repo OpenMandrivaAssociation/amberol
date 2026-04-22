@@ -15,6 +15,7 @@ BuildRequires:  dbus-x11
 BuildRequires:  gettext
 BuildRequires:  rust-packaging
 BuildRequires:  pkgconfig
+BuildRequires:  pkgconfig(blueprint-compiler)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1)
